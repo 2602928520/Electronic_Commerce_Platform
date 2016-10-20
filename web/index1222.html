@@ -9,21 +9,21 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="WEB-INF/js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script type="text/javascript">
        function Plus(){
-           
-           alert($("#count").html());
            var count=$("#count").html();
-          
-          $("#count").html(count+1); 
-           
-           
-           
-       }
+           $("#count").html(parseInt(count)+1); 
+      }
+       function Minus(){
+      var count=$("#count").html();
+      if(count!=0)
+      {    $("#count").html(parseInt(count)-1); 
+      }
+  }
         </script>
     </head>
     <body>
-        <h1>我是一本小黄书</h1><a href="javascript:void(0)" onclick="Minus()">-</a><span id="count">1</span><a href="javascript:void(0)" onclick="Plus()">+</a>
+        <div>  <h1>我是一本小黄书</h1><a href="javascript:void(0)" onclick="Minus()">-</a><span id="count">1</span><a href="javascript:void(0)" onclick="Plus()">+</a></div>
     </body>
 </html>
