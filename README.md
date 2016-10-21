@@ -1,4 +1,4 @@
 # Electronic_Commerce_Platform
 这是一个电商平台实习项目，
 我是夏志磊
-是吗？
+不是夏志磊
